@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="DigitalPensionPlanAPI/DigitalPensionPlanAPI.csproj" />
+  <Project Path="DigitalPensionPlanCore/DigitalPensionPlanCore.csproj" />
+  <Project Path="DigitalPensionPlanDomain/DigitalPensionPlanDomain.csproj" />
+  <Project Path="DigitalPensionPlanInfrastructure/DigitalPensionPlanInfrastructure.csproj" />
+</Solution>

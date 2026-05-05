@@ -1,0 +1,40 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: pensionplan-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: pensionplan
+      POSTGRES_USER: pensionplan_user
+      POSTGRES_PASSWORD: pensionplan_pass
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./database/pg_data:/var/lib/postgresql/data
+
+  pgadmin:
+    image: dpage/pgadmin4:9.13
+    container_name: pensionplan-pgadmin
+    restart: unless-stopped
+    environment:
+      PGADMIN_DEFAULT_EMAIL: pension@plan.com
+      PGADMIN_DEFAULT_PASSWORD: password
+    ports:
+      - "5050:80"
+    volumes:
+      - ./database/pgadmin_data:/var/lib/pgadmin
+    depends_on:
+      - postgres
+
+  api:
+    build: 
+      context: ./DigitalPensionPlanBackend
+    container_name: pensionplan-api
+    restart: unless-stopped
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: Host=postgres;Port=5432;Database=pensionplan;Username=pensionplan_user;Password=pensionplan_pass
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres

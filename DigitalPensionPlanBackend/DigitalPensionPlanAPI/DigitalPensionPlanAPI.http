@@ -1,0 +1,6 @@
+@DigitalPensionPlanAPI_HostAddress = http://localhost:5073
+
+GET {{DigitalPensionPlanAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
