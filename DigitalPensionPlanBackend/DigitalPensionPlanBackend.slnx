@@ -1,6 +1,6 @@
 <Solution>
   <Project Path="DigitalPensionPlanAPI/DigitalPensionPlanAPI.csproj" />
-  <Project Path="DigitalPensionPlanCore/DigitalPensionPlanCore.csproj" />
+  <Project Path="DigitalPensionPlanApplication/DigitalPensionPlanApplication.csproj" Id="465686c3-8fa3-4a80-ba0a-b49a61e8037c" />
   <Project Path="DigitalPensionPlanDomain/DigitalPensionPlanDomain.csproj" />
   <Project Path="DigitalPensionPlanInfrastructure/DigitalPensionPlanInfrastructure.csproj" />
 </Solution>
