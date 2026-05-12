@@ -14,7 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
     <Folder Include="Middleware\" />
     <Folder Include="Responses\" />
     <Folder Include="Requests\" />
@@ -22,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DigitalPensionPlanInfrastructure\DigitalPensionPlanInfrastructure.csproj" />
+    <ProjectReference Include="..\DigitalPensionPlanApplication\DigitalPensionPlanApplication.csproj" />
   </ItemGroup>
 
 </Project>
