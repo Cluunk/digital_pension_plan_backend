@@ -17,12 +17,12 @@ namespace DigitalPensionPlanAPI.Controllers
         [HttpGet("{phaseId}")]
         public async Task<IActionResult> GetById(Guid phaseId)
         {
-            var item = await getPhase.ExecuteAsync(phaseId);
+            var phase = await getPhase.ExecuteAsync(phaseId);
 
-            if (item == null)
+            if (phase == null)
                 return NotFound();
 
-            return Ok(item);
+            return Ok(phase);
         }
     }
 }
