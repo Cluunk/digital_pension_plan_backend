@@ -7,6 +7,7 @@ namespace DigitalPensionPlanInfrastructure.Persistance
     {
         public DbSet<Phase> Phases { get; set; }
         public DbSet<Gender> Genders { get; set; }
+        public DbSet<UserRole> UserRoles { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

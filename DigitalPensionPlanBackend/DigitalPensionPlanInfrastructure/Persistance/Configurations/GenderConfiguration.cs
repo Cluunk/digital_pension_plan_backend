@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DigitalPensionPlanInfrastructure.Persistance
+namespace DigitalPensionPlanInfrastructure.Persistance.Configurations
 {
     public class GenderConfiguration : IEntityTypeConfiguration<Gender>
     {

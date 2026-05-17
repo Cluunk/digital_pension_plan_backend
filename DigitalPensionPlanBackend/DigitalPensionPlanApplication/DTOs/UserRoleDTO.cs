@@ -4,5 +4,5 @@ using System.Text;
 
 namespace DigitalPensionPlanApplication.DTOs
 {
-    public record GenderDTO(Guid GenderId, string GenderDescription);
+    public record UserRoleDTO(Guid UserRoleId, string UserRoleName);
 }

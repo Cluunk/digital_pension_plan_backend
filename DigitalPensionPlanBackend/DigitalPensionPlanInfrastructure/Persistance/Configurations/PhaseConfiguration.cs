@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace DigitalPensionPlanInfrastructure.Persistance
+namespace DigitalPensionPlanInfrastructure.Persistance.Configurations
 {
     public class PhaseConfiguration : IEntityTypeConfiguration<Phase>
     {
