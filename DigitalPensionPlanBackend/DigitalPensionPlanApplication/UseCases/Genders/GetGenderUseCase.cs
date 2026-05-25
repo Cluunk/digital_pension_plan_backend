@@ -1,9 +1,9 @@
 ﻿using DigitalPensionPlanApplication.DTOs;
 using DigitalPensionPlanDomain.Interfaces;
 
-namespace DigitalPensionPlanApplication.UseCases.Genders.GetGender
+namespace DigitalPensionPlanApplication.UseCases.Genders
 {
-    public class GetGenderUseCase(IGenderRepository genderRepository) : IGetGenderUseCase
+    public class GetGenderUseCase(IGenderRepository genderRepository)
     {
         public async Task<GenderDTO?> ExecuteAsync(Guid genderId)
         {

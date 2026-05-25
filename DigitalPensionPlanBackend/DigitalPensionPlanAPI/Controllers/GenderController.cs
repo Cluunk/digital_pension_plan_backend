@@ -1,12 +1,11 @@
-﻿using DigitalPensionPlanApplication.UseCases.Genders.GetGender;
-using DigitalPensionPlanApplication.UseCases.Genders.GetGenders;
+﻿using DigitalPensionPlanApplication.UseCases.Genders;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DigitalPensionPlanAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class GenderController(IGetGenderUseCase getGender, IGetGendersUseCase getGenders) : ControllerBase
+    public class GenderController(GetGenderUseCase getGender, GetGendersUseCase getGenders) : ControllerBase
     {
         [HttpGet]
         public async Task<IActionResult> GetPhases()

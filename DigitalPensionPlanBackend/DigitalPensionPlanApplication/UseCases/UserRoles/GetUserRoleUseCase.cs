@@ -4,9 +4,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DigitalPensionPlanApplication.UseCases.UserRoles.GetUserRole
+namespace DigitalPensionPlanApplication.UseCases.UserRoles
 {
-    public class GetUserRoleUseCase(IUserRoleRepository userRoleRepository) : IGetUserRoleUseCase
+    public class GetUserRoleUseCase(IUserRoleRepository userRoleRepository)
     {
         public async Task<UserRoleDTO?> ExecuteAsync(Guid userRoleId)
         {

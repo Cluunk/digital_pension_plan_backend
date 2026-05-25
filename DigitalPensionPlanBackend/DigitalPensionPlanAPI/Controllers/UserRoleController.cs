@@ -1,12 +1,11 @@
-﻿using DigitalPensionPlanApplication.UseCases.UserRoles.GetUserRole;
-using DigitalPensionPlanApplication.UseCases.UserRoles.GetUserRoles;
+﻿using DigitalPensionPlanApplication.UseCases.UserRoles;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DigitalPensionPlanAPI.Controllers
 {
     [Route("api/user/user-role")]
     [ApiController]
-    public class UserRoleController(IGetUserRoleUseCase getRole, IGetUserRolesUseCase getRoles) : ControllerBase
+    public class UserRoleController(GetUserRoleUseCase getRole, GetUserRolesUseCase getRoles) : ControllerBase
     {
         [HttpGet]
         public async Task<IActionResult> GetRoles()

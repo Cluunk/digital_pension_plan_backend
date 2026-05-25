@@ -1,12 +1,11 @@
-﻿using DigitalPensionPlanApplication.UseCases.Phases.GetPhases;
-using DigitalPensionPlanApplication.UseCases.Phases.GetPhase;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using DigitalPensionPlanApplication.UseCases.Phases;
 
 namespace DigitalPensionPlanAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PhaseController(IGetPhaseUseCase getPhase, IGetPhasesUseCase getPhases) : ControllerBase
+    public class PhaseController(GetPhaseUseCase getPhase, GetPhasesUseCase getPhases) : ControllerBase
     {
         [HttpGet]
         public async Task<IActionResult> GetPhases()

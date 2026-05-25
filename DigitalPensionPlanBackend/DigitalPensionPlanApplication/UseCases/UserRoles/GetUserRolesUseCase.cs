@@ -1,13 +1,12 @@
 ﻿using DigitalPensionPlanApplication.DTOs;
-using DigitalPensionPlanApplication.UseCases.Phases.GetPhase;
 using DigitalPensionPlanDomain.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DigitalPensionPlanApplication.UseCases.UserRoles.GetUserRoles
+namespace DigitalPensionPlanApplication.UseCases.UserRoles
 {
-    public class GetUserRolesUseCase(IUserRoleRepository userRoleRepository) : IGetUserRolesUseCase
+    public class GetUserRolesUseCase(IUserRoleRepository userRoleRepository)
     {
         public async Task<List<UserRoleDTO>> ExecuteAsync()
         {

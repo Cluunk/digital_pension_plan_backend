@@ -1,12 +1,9 @@
 ﻿using DigitalPensionPlanApplication.DTOs;
 using DigitalPensionPlanDomain.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace DigitalPensionPlanApplication.UseCases.Phases.GetPhase
+namespace DigitalPensionPlanApplication.UseCases.Phases
 {
-    public class GetPhaseUseCase(IPhaseRepository phaseRepository) : IGetPhaseUseCase
+    public class GetPhaseUseCase(IPhaseRepository phaseRepository)
     {
         public async Task<PhaseDTO?> ExecuteAsync(Guid phaseId)
         {

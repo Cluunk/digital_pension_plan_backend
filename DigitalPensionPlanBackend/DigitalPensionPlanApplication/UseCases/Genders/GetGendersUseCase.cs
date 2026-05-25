@@ -1,13 +1,12 @@
 ﻿using DigitalPensionPlanApplication.DTOs;
-using DigitalPensionPlanApplication.UseCases.Genders.GetGender;
 using DigitalPensionPlanDomain.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DigitalPensionPlanApplication.UseCases.Genders.GetGenders
+namespace DigitalPensionPlanApplication.UseCases.Genders
 {
-    public class GetGendersUseCase(IGenderRepository genderRepository) : IGetGendersUseCase
+    public class GetGendersUseCase(IGenderRepository genderRepository)
     {
         public async Task<List<GenderDTO>> ExecuteAsync()
         {

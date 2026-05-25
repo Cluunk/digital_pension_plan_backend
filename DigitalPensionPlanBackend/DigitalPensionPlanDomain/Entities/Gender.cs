@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace DigitalPensionPlanDomain.Entities
+﻿namespace DigitalPensionPlanDomain.Entities
 {
     public class Gender
     {
