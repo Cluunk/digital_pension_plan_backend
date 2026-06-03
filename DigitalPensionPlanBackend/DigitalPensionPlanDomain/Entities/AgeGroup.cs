@@ -2,9 +2,9 @@
 {
     public class AgeGroup
     {
-        public required Guid AgeGroupId { get; init; }
-        public required int MinimumAge { get; init; }
-        public required int MaximumAge { get; init; }
-        public required string AgeGroupDescription { get; init; }
+        public Guid AgeGroupId { get; private set; }
+        public int MinimumAge { get; init; }
+        public int MaximumAge { get; init; }
+        public string AgeGroupDescription { get; init; } = string.Empty;
     }
 }

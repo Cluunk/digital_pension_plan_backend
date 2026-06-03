@@ -2,7 +2,7 @@
 {
     public class Gender
     {
-        public required Guid GenderId { get; init; }
-        public required string GenderDescription { get; init; }
+        public Guid GenderId { get; private set; }
+        public string GenderDescription { get; init; } = string.Empty;
     }
 }

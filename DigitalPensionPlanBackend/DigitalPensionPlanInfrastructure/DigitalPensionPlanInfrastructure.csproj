@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\pension-plan-definitions\generated\csharp\pension-plan-definitions.csproj" />
     <ProjectReference Include="..\DigitalPensionPlanDomain\DigitalPensionPlanDomain.csproj" />
   </ItemGroup>
 

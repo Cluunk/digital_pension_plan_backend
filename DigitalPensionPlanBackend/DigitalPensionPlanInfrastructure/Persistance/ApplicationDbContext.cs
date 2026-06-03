@@ -10,6 +10,7 @@ namespace DigitalPensionPlanInfrastructure.Persistance
         public DbSet<UserRole> UserRoles { get; set; }
         public DbSet<AgeGroup> AgeGroups { get; set; }
         public DbSet<Country> Countries { get; set; }
+        public DbSet<Host> Hosts { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

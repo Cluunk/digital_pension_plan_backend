@@ -1,7 +1,7 @@
 INSERT INTO public.age_groups (
     minimum_age,
     maximum_age,
-    description
+    age_group_description
 )
 VALUES
     (18, 24, '18-24'),

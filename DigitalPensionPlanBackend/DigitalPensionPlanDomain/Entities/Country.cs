@@ -6,8 +6,8 @@ namespace DigitalPensionPlanDomain.Entities
 {
     public class Country
     {
-        public required Guid CountryId { get; init; }
-        public required string CountryName { get; init; }
-        public required string CountryAbbreviation { get; init; }
+        public Guid CountryId { get; private set; }
+        public string CountryName { get; init; } = string.Empty;
+        public string CountryAbbreviation { get; init; } = string.Empty;
     }
 }

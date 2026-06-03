@@ -6,7 +6,7 @@ namespace DigitalPensionPlanDomain.Entities
 {
     public class UserRole
     {
-        public required Guid UserRoleId { get; init; }
-        public required string UserRoleName { get; init; }
+        public Guid UserRoleId { get; private set; }
+        public string UserRoleName { get; init; } = string.Empty;
     }
 }

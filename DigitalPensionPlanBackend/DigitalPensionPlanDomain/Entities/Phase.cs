@@ -6,7 +6,7 @@ namespace DigitalPensionPlanDomain.Entities
 {
     public class Phase 
     {
-        public required Guid PhaseId { get; init; }
-        public required string PhaseName { get; init; }
+        public Guid PhaseId { get; private set; }
+        public string PhaseName { get; init; } = string.Empty;
     }
 }

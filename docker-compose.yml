@@ -33,7 +33,8 @@ services:
     restart: unless-stopped
     environment:
       ASPNETCORE_ENVIRONMENT: Development
-      ConnectionStrings__DefaultConnection: Host=postgres;Port=5432;Database=pensionplan;Username=pensionplan_user;Password=pensionplan_pass
+      ASPNETCORE_URLS: http://+:8080
+      ConnectionStrings__DefaultConnection: Host=pensionplan-postgres;Port=5432;Database=pensionplan;Username=pensionplan_user;Password=pensionplan_pass
     ports:
       - "8080:8080"
     depends_on:
